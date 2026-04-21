@@ -98,4 +98,4 @@ join users as c on b.user_id = c.user_id
 where b.status = 'COMPLETED' 
 group by booking_id
 having total > 50000000 
-order by rating desc;
+order by rating desc, total desc;
